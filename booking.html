@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- معلومات الصفحة الأساسية -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- عنوان الصفحة -->
+    <title>Booking - Loving Homes</title>
+
+    <!-- ربط ملف التنسيق -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ربط الخط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- شريط التنقل -->
+<header class="navbar">
+
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="Loving Homes Logo">
+        <span>Loving Homes</span>
+    </div>
+
+    <nav>
+        <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+        <a href="about.html" data-en="About" data-ar="من نحن">About</a>
+        <a href="services.html" data-en="Services" data-ar="الخدمات">Services</a>
+        <a href="packages.html" data-en="Packages" data-ar="الباقات">Packages</a>
+        <a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a>
+        <a href="booking.html" data-en="Booking" data-ar="الحجز">Booking</a>
+        <a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+        <a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a>
+    </nav>
+
+    <div class="controls">
+        <button id="language-toggle" class="lang-btn">AR</button>
+        <button id="theme-toggle" class="theme-btn">Dark</button>
+    </div>
+
+</header>
+
+<!-- المحتوى الرئيسي -->
+<main>
+
+<!-- مقدمة الصفحة -->
+<section class="inner-hero">
+
+<p class="section-subtitle"
+data-en="Booking"
+data-ar="الحجز">
+Booking
+</p>
+
+<h1
+data-en="Book Your Dog's Stay"
+data-ar="احجز إقامة كلبك">
+Book Your Dog's Stay
+</h1>
+
+<p
+data-en="Complete the form below to reserve a comfortable and safe stay for your dog at Loving Homes. Custom packages are also available for long stays or dogs with additional requirements."
+data-ar="قم بملء النموذج أدناه لحجز إقامة مريحة وآمنة لكلبك في Loving Homes. كما تتوفر حزم مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية.">
+Complete the form below to reserve a comfortable and safe stay
+for your dog at Loving Homes. Custom packages are also available
+for long stays or dogs with additional requirements.
+</p>
+
+</section>
+
+<!-- نموذج الحجز -->
+<section class="services-preview">
+
+<div class="section-heading">
+
+<p class="section-subtitle"
+data-en="Reservation Form"
+data-ar="نموذج الحجز">
+Reservation Form
+</p>
+
+<h2
+data-en="Fill In Your Booking Details"
+data-ar="أدخل تفاصيل الحجز">
+Fill In Your Booking Details
+</h2>
+
+</div>
+
+<form>
+
+<!-- اسم صاحب الكلب -->
+<label for="owner"
+data-en="Owner Name"
+data-ar="اسم المالك">
+Owner Name
+</label>
+
+<input type="text"
+id="owner"
+name="owner"
+placeholder="Enter your name"
+data-en-placeholder="Enter your name"
+data-ar-placeholder="أدخل اسمك">
+
+<!-- اسم الكلب -->
+<label for="dog"
+data-en="Dog Name"
+data-ar="اسم الكلب">
+Dog Name
+</label>
+
+<input type="text"
+id="dog"
+name="dog"
+placeholder="Enter your dog's name"
+data-en-placeholder="Enter your dog's name"
+data-ar-placeholder="أدخل اسم كلبك">
+
+<!-- نوع الحزمة -->
+<label for="service"
+data-en="Package Type"
+data-ar="نوع الباقة">
+Package Type
+</label>
+
+<select id="service" name="service">
+    <option data-en="Premium Package" data-ar="الباقة المميزة">Premium Package</option>
+    <option data-en="Classic Package" data-ar="الباقة الكلاسيكية">Classic Package</option>
+    <option data-en="Day Package" data-ar="الباقة اليومية">Day Package</option>
+    <option data-en="Custom Package" data-ar="باقة مخصصة">Custom Package</option>
+</select>
+
+<!-- تاريخ الحجز -->
+<label for="date"
+data-en="Booking Date"
+data-ar="تاريخ الحجز">
+Booking Date
+</label>
+
+<input type="date" id="date" name="date">
+
+<!-- عدد الأيام -->
+<label for="days"
+data-en="Number Of Days"
+data-ar="عدد الأيام">
+Number Of Days
+</label>
+
+<input type="number"
+id="days"
+name="days"
+placeholder="Enter number of days"
+data-en-placeholder="Enter number of days"
+data-ar-placeholder="أدخل عدد الأيام">
+
+<!-- ملاحظات -->
+<label for="notes"
+data-en="Additional Notes"
+data-ar="ملاحظات إضافية">
+Additional Notes
+</label>
+
+<textarea
+id="notes"
+name="notes"
+placeholder="Write any special instructions or custom package requirements"
+data-en-placeholder="Write any special instructions or custom package requirements"
+data-ar-placeholder="اكتب أي تعليمات إضافية أو متطلبات خاصة للباقة المخصصة"></textarea>
+
+<button type="submit"
+data-en="Submit Booking"
+data-ar="إرسال الحجز">
+Submit Booking
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+<!-- الفوتر -->
+<footer class="footer">
+
+<p
+data-en="© 2026 Loving Homes. All rights reserved."
+data-ar="© 2026 Loving Homes. جميع الحقوق محفوظة.">
+© 2026 Loving Homes. All rights reserved.
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

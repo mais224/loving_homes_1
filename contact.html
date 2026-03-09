@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- معلومات الصفحة الأساسية -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- عنوان الصفحة -->
+    <title>Contact - Loving Homes</title>
+
+    <!-- ربط ملف التنسيق -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ربط الخط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- شريط التنقل -->
+    <header class="navbar">
+
+        <!-- اسم الموقع -->
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Loving Homes Logo">
+            <span>Loving Homes</span>
+        </div>
+
+        <!-- روابط الصفحات -->
+        <nav>
+            <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+            <a href="about.html" data-en="About" data-ar="من نحن">About</a>
+            <a href="services.html" data-en="Services" data-ar="الخدمات">Services</a>
+            <a href="packages.html" data-en="Packages" data-ar="الباقات">Packages</a>
+            <a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a>
+            <a href="booking.html" data-en="Booking" data-ar="الحجز">Booking</a>
+            <a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+            <a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a>
+        </nav>
+
+        <!-- أزرار اللغة والوضع الليلي -->
+        <div class="controls">
+            <button id="language-toggle" class="lang-btn">AR</button>
+            <button id="theme-toggle" class="theme-btn">Dark</button>
+        </div>
+
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+
+        <!-- مقدمة الصفحة -->
+        <section class="inner-hero">
+
+            <p class="section-subtitle" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</p>
+
+            <h1 data-en="Get In Touch With Loving Homes" data-ar="تواصل مع Loving Homes">
+                Get In Touch With Loving Homes
+            </h1>
+
+            <p data-en="We are always happy to answer your questions, provide general advice about our packages, and help you arrange the best stay for your dog."
+               data-ar="يسعدنا دائمًا الإجابة عن أسئلتك وتقديم المشورة العامة حول الباقات ومساعدتك في ترتيب أفضل إقامة لكلبك.">
+                We are always happy to answer your questions, provide general advice
+                about our packages, and help you arrange the best stay for your dog.
+            </p>
+
+        </section>
+
+        <!-- قسم معلومات التواصل -->
+        <section class="contact-section">
+
+            <!-- صندوق معلومات التواصل -->
+            <div class="contact-info">
+                <h2 data-en="Contact Information" data-ar="معلومات التواصل">Contact Information</h2>
+
+                <p>
+                    <strong data-en="Phone:" data-ar="الهاتف:">Phone:</strong>
+                    +962 7 9000 0000
+                </p>
+
+                <p>
+                    <strong data-en="Email:" data-ar="البريد الإلكتروني:">Email:</strong>
+                    info@lovinghomes.com
+                </p>
+
+                <p>
+                    <strong data-en="Location:" data-ar="الموقع:">Location:</strong>
+                    <span data-en="Amman, Jordan" data-ar="عمّان، الأردن">Amman, Jordan</span>
+                </p>
+
+                <p>
+                    <strong data-en="Working Hours:" data-ar="ساعات العمل:">Working Hours:</strong>
+                    <span data-en="9:00 AM - 8:00 PM" data-ar="9:00 صباحًا - 8:00 مساءً">9:00 AM - 8:00 PM</span>
+                </p>
+
+                <p>
+                    <strong data-en="Support:" data-ar="الدعم:">Support:</strong>
+                    <span data-en="General advice, package help, and custom booking enquiries" data-ar="مشورة عامة ومساعدة في الباقات واستفسارات الحجز المخصص">
+                        General advice, package help, and custom booking enquiries
+                    </span>
+                </p>
+            </div>
+
+            <!-- صندوق نموذج التواصل -->
+            <div class="contact-form-box">
+                <h2 data-en="Send Us A Message" data-ar="أرسل لنا رسالة">Send Us A Message</h2>
+
+                <!-- نموذج الرسائل -->
+                <form>
+
+                    <!-- إدخال الاسم -->
+                    <label for="name" data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your full name"
+                           data-en-placeholder="Enter your full name"
+                           data-ar-placeholder="أدخل اسمك الكامل">
+
+                    <!-- إدخال الإيميل -->
+                    <label for="email" data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           data-en-placeholder="Enter your email"
+                           data-ar-placeholder="أدخل بريدك الإلكتروني">
+
+                    <!-- إدخال الموضوع -->
+                    <label for="subject" data-en="Subject" data-ar="الموضوع">Subject</label>
+                    <input type="text"
+                           id="subject"
+                           name="subject"
+                           placeholder="Enter the subject"
+                           data-en-placeholder="Enter the subject"
+                           data-ar-placeholder="أدخل الموضوع">
+
+                    <!-- الرسالة -->
+                    <label for="message" data-en="Message" data-ar="الرسالة">Message</label>
+                    <textarea id="message"
+                              name="message"
+                              placeholder="Write your message here, including any custom package or long stay request"
+                              data-en-placeholder="Write your message here, including any custom package or long stay request"
+                              data-ar-placeholder="اكتب رسالتك هنا، بما في ذلك أي طلب لباقة مخصصة أو إقامة طويلة"></textarea>
+
+                    <!-- زر الإرسال -->
+                    <button type="submit" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <p data-en="© 2026 Loving Homes. All rights reserved."
+           data-ar="© 2026 Loving Homes. جميع الحقوق محفوظة.">
+            © 2026 Loving Homes. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
